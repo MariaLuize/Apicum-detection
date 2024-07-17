@@ -11,7 +11,7 @@ Apicuns, denominadas em inglês de _hypersaline tidal flats_, são unidades geoa
 * Filtro de frequência: [link](https://code.earthengine.google.com/7f52208abe29145d3ea9ba847fd5dba7)
 * Delimitação por área da ZCB: [link](https://code.earthengine.google.com/78f506affaadf361f203b2480568de0f)
 
-* Visualização do produto final e estatísticas: [link](https://code.earthengine.google.com/ac8268117c483b81e9ff64df61b69d0b)*
+* Visualização do produto final e estatísticas: [link](https://code.earthengine.google.com/335420df1616c85acf67f99bcc951a88)*
 
 
 ## Uso do script de ''Visualização do produto final e estatísticas''
@@ -123,6 +123,6 @@ Map.setCenter(-43.59631,-23.01244,13)
 var errorM = points.errorMatrix('classification','HTF_Seg')
 print('Error Matrix',errorM)
 print('O.A',errorM.accuracy())
-print('Kappa',errorM.fscore())
+print('F1-Score',errorM.fscore())
 print('Consumer',errorM.consumersAccuracy())
 print('Producers',errorM.producersAccuracy())
